@@ -1,3 +1,9 @@
-.nav{display: inline;
-justify-content: space-between;}
+.nav{
+    background-color: orangered;
+}
 
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

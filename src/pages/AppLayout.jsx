@@ -1,12 +1,11 @@
-import {Link} from "react-router-dom";
-import AppNav from "../components/AppNav"
-
+import Sidebar from "../components/Sidebar"
+import Map from '../components/Map'
+import styles from './AppLayout.module.css'
 function AppLayout(){
   return (
-    <div>
-      <AppNav />
-      <p>App</p>
-      <Link to='/'>Go to Homepage</Link>
+    <div className={styles.app}>
+      <Sidebar />
+      <Map/>
     </div>
   )
 }

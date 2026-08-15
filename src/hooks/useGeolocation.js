@@ -15,6 +15,7 @@ export function useGeolocation(defaultPosition = null) {
         setPosition({
           lat: pos.coords.latitude,
           lng: pos.coords.longitude,
+          
         });
         setIsLoading(false);
       },
@@ -27,4 +28,3 @@ export function useGeolocation(defaultPosition = null) {
 
   return { isLoading, position, error, getPosition };
 }
-
